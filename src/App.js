@@ -175,7 +175,7 @@ class App extends Component {
 
         <Content className="app-content">
           <div className="container" style={{ minHeight: '1025px' }}>
-            <HashRouter>
+            <Switch>
               {this.state.secondAuthentication && <Route exact path="/adaptiveLogin"
                 render={(props) => <AdaptiveOutput username={this.state.currentUser} loadCurrentUser={this.loadCurrentUser} onLogin={this.handleLogin} {...props} />}
               ></Route>}
@@ -194,7 +194,7 @@ class App extends Component {
               <Route exact path="/*">
                 <Redirect to="/login" />
               </Route>
-            </HashRouter>
+            </Switch>
           </div>
 
         </Content>
