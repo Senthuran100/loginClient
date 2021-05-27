@@ -1,0 +1,37 @@
+{
+  "homepage":"http://Senthuran100.github.io/AdaptiveLogin",
+  "name": "login-java-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.9.2",
+    "antd-init": "^2.0.6",
+    "axios": "^0.18.0",
+    "bin2hex": "^1.0.1",
+    "clientjs": "^0.1.11",
+    "detect-browser": "^5.2.0",
+    "get-mac-address": "^1.0.0",
+    "material-ui": "^0.20.2",
+    "mouse-events": "0.0.2",
+    "public-ip": "^4.0.3",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-tap-event-plugin": "^3.0.3",
+    "string-hash": "^1.1.3",
+    "ua-parser-js": "^0.7.24"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@ant-design/icons": "^4.5.0",
+    "gh-pages": "^3.1.0"
+  }
+}
