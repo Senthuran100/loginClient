@@ -12,7 +12,8 @@ import {
   Route,
   withRouter,
   Switch,
-  Redirect
+  Redirect,
+  HashRouter
 } from 'react-router-dom';
 import { Layout, notification } from 'antd';
 const { Content } = Layout;
@@ -174,7 +175,7 @@ class App extends Component {
 
         <Content className="app-content">
           <div className="container" style={{ minHeight: '1025px' }}>
-            <Switch>
+            <HashRouter>
               {this.state.secondAuthentication && <Route exact path="/adaptiveLogin"
                 render={(props) => <AdaptiveOutput username={this.state.currentUser} loadCurrentUser={this.loadCurrentUser} onLogin={this.handleLogin} {...props} />}
               ></Route>}
@@ -193,7 +194,7 @@ class App extends Component {
               <Route exact path="/*">
                 <Redirect to="/login" />
               </Route>
-            </Switch>
+            </HashRouter>
           </div>
 
         </Content>
