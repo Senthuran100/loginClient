@@ -1,5 +1,5 @@
 {
-  "homepage":"http://Senthuran100.github.io/AdaptiveLogin",
+  "homepage": "http://Senthuran100.github.io/loginClient",
   "name": "login-java-react",
   "version": "0.1.0",
   "private": true,
@@ -32,6 +32,6 @@
   },
   "devDependencies": {
     "@ant-design/icons": "^4.5.0",
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.2.0"
   }
 }
